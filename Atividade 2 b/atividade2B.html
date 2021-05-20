@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="operacoes.js"></script>
+    <title>Atividade 2 letra b</title>
+</head>
+<body>
+    <form name="operacoes" action="#" method="POST">
+        <div>
+            <label for="valor1">Digite o valor <strong>1</strong>:</label>
+            <input type="text" name="valor1" id="valor1" /><br><br>
+            <label for="valor2">Digite o valor <strong>2</strong>:</label>
+            <input type="text" name="valor2" id="valor2" /><br><br>
+            <label for="valor3">Digite o valor <strong>3</strong>:</label>
+            <input type="text" name="valor3" id="valor3" /><br><br><br>
+            <label for="selecao">Selecione a Operação</label><br><br>
+        </div>
+        <select name="oper" id="oper">
+            <option value="somar">Somar</option>
+            <option value="media">Média</option>
+            <option value="multiplicar">Multiplifcar</option>
+            <option value="maior">Maior</option>
+            <option value="menor">Menor</option>
+         </select>
+         
+      <label for="res">Resultado:</label>
+      <input type="text" name="res" id="res" />
+      <input type="button" value="calcular" class="botao" onClick="calcular(document.operacoes.oper.value)"/>
+      
+    </form>
+</body>
+</html>
